@@ -1,32 +1,163 @@
-<!DOCTYPE html><html><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='stylesheet' href='assets/css/style.css'>
-<title>Nikita Portfolio</title>
-</head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikita Ganesh Shet | Landscape Draftsman</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            margin: 0;
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #1a1a1a;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f2a900;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            position: relative;
+            height: 70vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.75;
+        }
+
+        .hero-text {
+            position: absolute;
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0px 4px 10px black;
+        }
+
+        .section {
+            padding: 60px 40px;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            border-left: 5px solid #f2a900;
+            padding-left: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1d1d1d;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
 
 <header>
-<div style='font-size:24px;font-weight:bold;color:#f2a900'>Nikita Ganesh Shet</div>
-<nav>
-<a href='index.html'>Home</a>
-<a href='projects.html'>Projects</a>
-<a href='about.html'>About</a>
-<a href='contact.html'>Contact</a>
-</nav>
+    <div class="logo">Nikita Ganesh Shet</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
 
-<div class='hero'>
-<img src='assets/img/hero1.svg'>
-<div class='hero-text'>Professional Landscape Drafting</div>
+<!-- HERO SECTION -->
+<div class="hero">
+    <img src="assets/img/hero1.jpg" alt="hero image">
+    <div class="hero-text">Professional Landscape Drafting</div>
 </div>
 
-<div class='section'>
-<h2>Featured Projects</h2>
-<div class='grid'>
-<div class='card'><a href='project-1.html'><img src='assets/img/proj1.svg'></a><div class='card-title'>Landscape Master Plan</div></div>
-<div class='card'><a href='project-2.html'><img src='assets/img/proj2.svg'></a><div class='card-title'>Grading & Drainage</div></div>
-<div class='card'><a href='project-3.html'><img src='assets/img/proj3.svg'></a><div class='card-title'>Seating Trellis</div></div>
-</div>
+<!-- FEATURED PROJECTS -->
+<div class="section">
+    <h2>Featured Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <a href="project-1.html">
+                <img src="assets/img/proj1.svg" alt="Project 1">
+            </a>
+            <div class="card-title">Landscape Master Plan</div>
+        </div>
+
+        <div class="card">
+            <a href="project-2.html">
+                <img src="assets/img/proj2.svg" alt="Project 2">
+            </a>
+            <div class="card-title">Grading & Drainage Plan</div>
+        </div>
+
+        <div class="card">
+            <a href="project-3.html">
+                <img src="assets/img/proj3.svg" alt="Project 3">
+            </a>
+            <div class="card-title">Seating Trellis</div>
+        </div>
+
+    </div>
 </div>
 
-<script src='assets/js/main.js'></script>
-</body></html>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
